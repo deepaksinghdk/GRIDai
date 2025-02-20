@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDai</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>coming <span class="changing-word"></span><span class="dot">.</span></h1>
+        <p>GRIDai.</p>
+        <div class="icons">
+          <a href=""><i class="fa fa-paper-plane"></i></a>
+        </div>
+        <footer>
+            <p>© 2025 <a href="https://carryup.in" target="_blank">CarryUp Innovations Private Limited</a></p>
+          </footer>
+          
+    </div>
+    <style>
+            body {
+            background: #00091B;
+            color: #fff;
+            }
+
+
+            @keyframes fadeIn {
+            from {top: 20%; opacity: 0;}
+            to {top: 100; opacity: 1;}
+            
+            }
+
+            @-webkit-keyframes fadeIn {
+            from {top: 20%; opacity: 0;}
+            to {top: 100; opacity: 1;}
+            
+            }
+
+            .wrapper {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            animation: fadeIn 1000ms ease;
+            -webkit-animation: fadeIn 1000ms ease;
+            
+            }
+
+            @keyframes flashyText {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+            }
+            @keyframes flashyColors {
+            0% { color: #ff0000; } 
+            20% { color: #00ff00; } 
+            40% { color: #0000ff; } 
+            60% { color: #ffff00; } 
+            80% { color: #ff00ff; } 
+            100% { color: #00ffff; } 
+            }
+
+            @keyframes changeWord {
+            0%, 20% { content: "soon"; }
+            25%, 45% { content: "fast"; }
+            50%, 70% { content: "next"; }
+            75%, 95% { content: "shortly"; }
+            100% { content: "now"; }
+            }
+
+            h1 {
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0;
+            line-height: 1;
+            font-weight: 700;
+            animation: flashyColors 0.1s infinite linear;
+            }
+
+            .changing-word::after {
+            content: "soon"; /* Default text */
+            animation: changeWord 3s infinite linear;
+            }
+
+
+            .dot {
+            color: #4FEBFE;
+            }
+
+            p {
+            text-align: center;
+            margin: 18px;
+            font-family: 'Muli', sans-serif;
+            font-weight: normal;
+            
+            }
+
+            .icons {
+            text-align: center;
+            
+            }
+
+            .icons i {
+            color: #00091B;
+            background: #fff;
+            height: 15px;
+            width: 15px;
+            padding: 13px;
+            margin: 0 10px;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            transition: all 200ms ease;
+            text-decoration: none;
+            position: relative;
+            }
+
+            .icons i:hover, .icons i:active {
+            color: #fff;
+            background: none;
+            cursor: pointer !important;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            text-decoration: none;
+            
+            }
+                    footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color: #fff;
+            }
+
+            footer a {
+            color: #4FEBFE;
+            text-decoration: none;
+            font-weight: bold;
+            }
+
+            footer a:hover {
+            text-decoration: underline;
+            }
+    </style>
+</body>
+</html>
